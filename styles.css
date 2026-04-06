@@ -7,24 +7,23 @@ body {
     color: #3B3939;
 }
 
-a {
-    color: #3B3939;
-    text-decoration: none;
-}
-
-h1 {
+#banner h1 {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 82px;
-    margin: 0;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    text-shadow: 2px 1px #ffffff,
+    1px 5px 5px #bbaf9a;
 }
 
 #container {
-    width: 1200px;
+    max-width: 1200px;
     height: 750px;
     min-width: 800px;
-    background-color: aquamarine;
+    /* background-color: #01dd29; */
     margin: auto;
 }
 
@@ -32,17 +31,36 @@ h1 {
     max-width: 1100px;
     height: 250px;
     text-align: center;
-    background-color: rgb(0, 255, 102);
     margin: auto;
+    position: relative;
 }
 
-#banner h2 {
+#subtitle {
+    width: 220px;
+    height: 220px;
+    background-color: #FFF09B;
+    border-radius: 100%;
+    position: absolute;
+    right: -10px;
+    top: -30px;
+}
+
+#subtitle h2 {
     font-size: 24px;
+    line-height: 1.3em;
+    padding-top: 40px;
+    color: #EBA9FF;
 }
 
 #switch {
     display: flex;
     justify-self: center;
+    margin-bottom: 60px;
+}
+
+#switch a {
+    color: #3B3939;
+    text-decoration: none;
 }
 
 #left {
@@ -51,6 +69,34 @@ h1 {
     height: 331px;
     border-top-left-radius: 75px;
     border-bottom-left-radius: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+#left .joystick {
+    width: 59px;
+    height: 59px;
+    background-color: #3B3939;
+    border-radius: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#left .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    margin: auto;
+    transform: rotate(45deg);
+    margin-top: 20px;
+}
+
+#left .buttons div {
+    width: 25px;
+    height: 25px;
+    background-color: #3B3939;
+    border-radius: 100%;
+    margin: 10px;
 }
 
 main {
@@ -100,7 +146,7 @@ main ul li:hover {
     transform: scale(1.2);
 }
 
-main ul li a:hover {
+#switch a:hover {
     color: #EBA9FF;
 }
 
@@ -119,4 +165,47 @@ main h2 {
     height: 331px;
     border-top-right-radius: 75px;
     border-bottom-right-radius: 75px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#right .joystick {
+    width: 59px;
+    height: 59px;
+    background-color: #3B3939;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#right .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    margin: auto;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+}
+
+#right .buttons div {
+    width: 25px;
+    height: 25px;
+    background-color: #3B3939;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+footer {
+    padding: 20px;
+    line-height: 1.5em;
+    color: #EBA9FF;
+    background-color: #FFF09B;
+    width: fit-content;
+}
+footer a {
+    text-decoration: none;
+    color: #EBA9FF;
+}
+footer p {
+    margin: 0;
 }
