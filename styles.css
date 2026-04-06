@@ -4,6 +4,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: #3B3939;
+}
+
+a {
+    color: #3B3939;
+    text-decoration: none;
 }
 
 h1 {
@@ -11,11 +17,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 82px;
+    margin: 0;
 }
 
 #container {
-    max-width: 1200px;
-    max-height: 750px;
+    width: 1200px;
+    height: 750px;
     min-width: 800px;
     background-color: aquamarine;
     margin: auto;
@@ -33,11 +40,26 @@ h1 {
     font-size: 24px;
 }
 
+#switch {
+    display: flex;
+    justify-self: center;
+}
+
+#left {
+    background-color: #01BCDD;
+    width: 115px;
+    height: 331px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+
 main {
     display: flex;
-    background-color: aqua;
+    background-color: #3B3939;
     justify-self: center;
-    gap: 22px;
+    gap: 15px;
+    padding: 20px;
+    width: 757px;
 }
 
 main div {
@@ -56,11 +78,30 @@ main div h2 {
     padding-left: 10px;
 }
 
+main ul {
+    margin: 0;
+}
+
 main ul li {
     list-style-type: none;
     font-size: 16px;
     padding: 15px;
     background-color: #A9A9A9;
+    transition: all 1s ease;
+}
+
+main ul li a {
+    transition: all 1s ease;
+    padding-right: 10px;
+}
+
+main ul li:hover {
+    background-color: #FFF09B;
+    transform: scale(1.2);
+}
+
+main ul li a:hover {
+    color: #EBA9FF;
 }
 
 main ul {
@@ -70,4 +111,12 @@ main ul {
 main h2 {
     font-size: 20px;
     font-weight: 600;
+}
+
+#right {
+    background-color: #F17271;
+    width: 115px;
+    height: 331px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
 }
