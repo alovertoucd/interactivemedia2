@@ -27,6 +27,109 @@ body {
     margin: auto;
 }
 
+.bg {
+    position: relative;
+}
+
+#cir-gren {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    background-color: #8AE6A5;
+    top: 220px;
+    left: 50px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#cir-pink {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    background-color: #FFC7F6;
+    top: 600px;
+    right: 400px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#cir-blu {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #9BD4FF;
+    top: 150px;
+    right: 250px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#square-pink {
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    background-color: #FFC7F6;
+    top: 66px;
+    left: 160px;
+    z-index: -1;
+    transform: rotate(21deg);
+}
+
+#square-gren {
+    position: absolute;
+    width: 129px;
+    height: 129px;
+    background-color: #8AE6A5;
+    top: 528px;
+    right: 160px;
+    z-index: -1;
+    transform: rotate(-28deg);
+}
+
+#square-purp {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-color: #EBA9FF;
+    top: 560px;
+    left: 137px;
+    z-index: -1;
+    transform: rotate(56deg);
+}
+
+#square-red {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #FFB5B5;
+    top: 360px;
+    right: 0px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+
+#rect-red {
+    position: absolute;
+    width: 179px;
+    height: 75px;
+    background-color: #FFB5B5;
+    top: 200px;
+    left: 446px;
+    z-index: -1;
+    transform: rotate(65deg);
+}
+
+#rect-yell {
+    position: absolute;
+    width: 78px;
+    height: 200px;
+    background-color: #FFF09B;
+    top: 350px;
+    left: 50px;
+    z-index: -1;
+    transform: rotate(40deg);
+}
+
 #banner {
     max-width: 1100px;
     height: 250px;
@@ -202,10 +305,12 @@ footer {
     background-color: #FFF09B;
     width: fit-content;
 }
+
 footer a {
     text-decoration: none;
     color: #EBA9FF;
 }
+
 footer p {
     margin: 0;
 }
