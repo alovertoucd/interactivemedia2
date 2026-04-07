@@ -1,7 +1,6 @@
 body {
     background-color: #FFFBF4;
     font-family: "Gantari", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: #3B3939;
@@ -23,7 +22,6 @@ body {
     max-width: 1200px;
     height: 750px;
     min-width: 800px;
-    /* background-color: #01dd29; */
     margin: auto;
 }
 
@@ -40,6 +38,19 @@ body {
     left: 50px;
     z-index: -1;
     border-radius: 50%;
+    animation: cirgren 2s ease infinite alternate;
+}
+
+@keyframes cirgren {
+    from {
+        top: 239px;
+        left: 53px;
+    }
+
+    to {
+        top: 210px;
+        transform: scale(1.1);
+    }
 }
 
 #cir-pink {
@@ -51,6 +62,18 @@ body {
     right: 400px;
     z-index: -1;
     border-radius: 50%;
+    animation: cirpink 3.5s ease infinite alternate;
+}
+
+@keyframes cirpink {
+    from {
+        top: 610px;
+        transform: scale(1.1);
+    }
+
+    to {
+        top: 590px;
+    }
 }
 
 #cir-blu {
@@ -62,6 +85,19 @@ body {
     right: 250px;
     z-index: -1;
     border-radius: 50%;
+    animation: cirblu 3s ease infinite alternate;
+}
+
+@keyframes cirblu {
+    from {
+        top: 159px;
+        right: 258px;
+    }
+
+    to {
+        top: 130px;
+        right: 248px;
+    }
 }
 
 #square-pink {
@@ -73,6 +109,19 @@ body {
     left: 160px;
     z-index: -1;
     transform: rotate(21deg);
+    animation: squarepink 3s ease infinite alternate;
+}
+
+@keyframes squarepink {
+    from {
+        top: 76px;
+        transform: rotate(25deg);
+    }
+
+    to {
+        top: 53px;
+        transform: rotate(17deg);
+    }
 }
 
 #square-gren {
@@ -84,6 +133,20 @@ body {
     right: 160px;
     z-index: -1;
     transform: rotate(-28deg);
+    animation: squaregren 2s ease infinite alternate;
+}
+
+@keyframes squaregren {
+    from {
+        top: 521px;
+        right: 163px;
+        transform: rotate(-25deg);
+    }
+
+    to {
+        top: 540px;
+        transform: rotate(-30deg);
+    }
 }
 
 #square-purp {
@@ -95,6 +158,17 @@ body {
     left: 137px;
     z-index: -1;
     transform: rotate(56deg);
+    animation: squarepurp 1.7s ease infinite alternate;
+}
+
+@keyframes squarepurp {
+    from {
+        top: 548px;
+    }
+
+    to {
+        top: 562px;
+    }
 }
 
 #square-red {
@@ -106,6 +180,19 @@ body {
     right: 0px;
     z-index: -1;
     transform: rotate(20deg);
+    animation: squarered 2.5s ease infinite alternate;
+}
+
+@keyframes squarered {
+    from {
+        top: 370px;
+        transform: rotate(20deg);
+    }
+
+    to {
+        top: 340px;
+        transform: rotate(24deg);
+    }
 }
 
 #rect-red {
@@ -117,6 +204,17 @@ body {
     left: 446px;
     z-index: -1;
     transform: rotate(65deg);
+    animation: rectred 3s ease infinite alternate;
+}
+
+@keyframes rectred {
+    from {
+        top: 180px;
+    }
+
+    to {
+        top: 240px;
+    }
 }
 
 #rect-yell {
@@ -128,6 +226,19 @@ body {
     left: 50px;
     z-index: -1;
     transform: rotate(40deg);
+    animation: rectyell 3s ease infinite alternate;
+}
+
+@keyframes rectyell {
+    from {
+        top: 340px;
+        transform: rotate(41deg);
+    }
+
+    to {
+        top: 375px;
+        transform: rotate(48deg);
+    }
 }
 
 #banner {
@@ -146,13 +257,24 @@ body {
     position: absolute;
     right: -10px;
     top: -30px;
+    animation: subtitle 3.5s ease-in-out infinite forwards;
+}
+
+@keyframes subtitle {
+    0% {
+        top: -30px;
+    }
+
+    50% {
+        top: 0px;
+    }
 }
 
 #subtitle h2 {
     font-size: 24px;
     line-height: 1.3em;
     padding-top: 40px;
-    color: #EBA9FF;
+    color: #b94ec0;
 }
 
 #switch {
@@ -250,7 +372,7 @@ main ul li:hover {
 }
 
 #switch a:hover {
-    color: #EBA9FF;
+    color: #b94ec0;
 }
 
 main ul {
@@ -301,14 +423,19 @@ main h2 {
 footer {
     padding: 20px;
     line-height: 1.5em;
-    color: #EBA9FF;
+    color: #b94ec0;
     background-color: #FFF09B;
     width: fit-content;
+    font-size: 18px;
 }
 
 footer a {
     text-decoration: none;
-    color: #EBA9FF;
+    color: #b94ec0;
+}
+
+footer a:hover {
+    color: #3B3939;
 }
 
 footer p {
