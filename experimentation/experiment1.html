@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Check out the console for the results</h2>
+
+    <script>
+/* This program, has the user write a phrase of some kind, then replaces all the "i"s with the word "eye" and all "u"s with the word "ewe". Additionally, at the end, it counts up how many "i"s, "u"s, other letters, and total replaced letters*/
+        var phrase = prompt("Write a statement of some kind :)", "");
+        /* sequence step 2 */
+        var newPhrase = "";
+
+        /* sequence step 3 */
+        var eyeCounter = 0;
+
+        /* sequence step 4 */
+        var eweCounter = 0;
+
+        /* sequence step 5 */
+        var otherLetters = 0;
+
+        /* sequence step 6 run loop */
+        for (var i =0; i<phrase.length; i++){
+
+            /* sequence step 7 select letters */
+            if (phrase[i]=='i' || phrase[i]=='I' ){
+                newPhrase += phrase[i].replace(/i/i, '"eye"');
+                eyeCounter++;
+            }
+            else if (phrase[i]=='u' || phrase[i]=='U' ){
+                newPhrase += phrase[i].replace(/u/i, '"ewe"');
+                eweCounter++;
+            }
+            else {
+                newPhrase += phrase[i];
+                otherLetters++;
+            }
+        }
+
+        /* sequence step 8 final presentation */
+        console.log(phrase);
+        console.log(newPhrase);
+        console.log(`There are ${eyeCounter} "i"s`);
+        console.log(`There are ${eweCounter} "u"s`);
+        console.log(`There are ${eweCounter + eyeCounter} replaced letters`);
+        console.log(`There are ${otherLetters} other letters`);
+    </script>
+</body>
+</html>
