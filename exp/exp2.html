@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p></p>
+
+    <script>
+        /* This program asks for your favorite color. If red, blue, or yellow is said, the header and background will change to that color. If anything else is said, the color of the header and background will randomly change color, and add a statement saying they didn't pick a viable color. */
+        function colors (message){
+            var favColor = "";
+            var colors = ['blue', 'red', 'yellow'];
+            if (message == colors[0] || message == 'Blue'){
+                var h1Color = document.querySelector('h1');
+                h1Color.style.color = 'blue';
+
+                var bg = document.querySelector('body');
+                bg.style.backgroundColor = '#8C93DB';
+            }
+            else if (message == colors[1] || message == 'Red'){
+                var h1Color = document.querySelector('h1');
+                h1Color.style.color = 'red';
+
+                var bg = document.querySelector('body');
+                bg.style.backgroundColor = '#E5AAAA';
+            }
+            else if (message == colors[2] || message == 'Yellow'){
+                var h1Color = document.querySelector('h1');
+                h1Color.style.color = 'yellow';
+
+                var bg = document.querySelector('body');
+                bg.style.backgroundColor = '#FCD14E';
+            }
+            else {
+                function randomInt(min, max){
+                    var numofValues = max-min +1;
+                    var randomNum = Math.random();
+                    var randomVal = randomNum * numofValues;
+                    var rounded = Math.floor(randomVal);
+                    var finalNum = min + rounded;
+
+                    return finalNum;
+                }
+                var h1Color = document.querySelector('h1');
+                h1Color.style.color = `#${randomInt(0, 999999)}`;
+
+                var bg = document.querySelector('body');
+                bg.style.backgroundColor = `#${randomInt(0, 999999)}`;
+
+                var error = document.querySelector('p');
+                error.innerHTML = "<p>You didn't select a viable color :(</p>"
+            }
+        }
+        colors(prompt("What's your favorite color?", ""));
+    </script>
+</body>
+</html>
