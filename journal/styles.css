@@ -29,6 +29,11 @@ body {
     position: relative;
 }
 
+.bg2 {
+    position: relative;
+    top: 950px;
+}
+
 #notes {
     position: absolute;
     width: 90px;
@@ -404,6 +409,7 @@ body {
     display: flex;
     justify-self: center;
     margin-bottom: 60px;
+    flex-direction: column;
 }
 
 .switch a {
@@ -415,6 +421,7 @@ body {
     background-color: #3B3939;
     width: 900px;
     border-radius: 10px;
+    margin-bottom: 4em;
 }
 
 #sketch {
