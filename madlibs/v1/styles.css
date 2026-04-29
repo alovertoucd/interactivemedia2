@@ -10,6 +10,14 @@ body {
 
 }
 
+input,label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
 h1 {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
@@ -29,14 +37,6 @@ h1 {
     padding-right: 50px;
 }
 
-main {
-    position: relative;
-    width: 1040px;
-    height: 700px;
-    background-image: url(images/news.png);
-    margin: auto;
-    margin-top: 50px;
-}
 footer {
     position: absolute;
     right: 130px;
@@ -54,6 +54,16 @@ footer {
     color: #6394D4;
     font-size: 48px; 
 }
+
+main {
+    position: relative;
+    width: 1040px;
+    height: 700px;
+    background-image: url(images/news.png);
+    margin: auto;
+    margin-top: 50px;
+}
+
 section {
     position: absolute;
     padding: 20px;
@@ -63,9 +73,10 @@ section {
     left: 315px;
     width: 35%;
     height: 75%;
+    margin: auto;
 }
 
-button {
+.buttons {
     flex: 1;
     margin-left: auto;
     margin-top: 15px;
@@ -78,13 +89,43 @@ form {
 }
 
 #sec-1 {
-     background-color: rgb(255, 253, 246); z-index: 1;}
+     background-color: rgb(255, 253, 246); }
 #sec-2 { background-color: rgb(255, 253, 246);}
 #sec-3 { 
+    position: relative;
+    width: 1040px;
+    height: 700px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 50px;
+    left: 0;
+    top: 0;
+    opacity: 100%;
+}
+
+#sec-3 div {
     background-color: #6394d4ad;
     display: flex;
     padding: 20px;
     flex-direction: column;
     color: aliceblue;
+    z-index: 1;
+    left: 50%;
+    position: absolute;
+    width: 35%;
+    height: 75%;
+    top: 10%;
 }
 
+#sec-3 div #closing {
+    text-align: right;
+}
+
+#sec-3 div #lastbuttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#sec-3 div #lastbuttons input {
+    flex: 1;
+}
