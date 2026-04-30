@@ -1,0 +1,140 @@
+body {
+    width: 1200px;
+    height: 750px;
+    background-color: #F4FCFF;
+    margin: auto;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+}
+
+input,label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    top: 0px;
+    color: #6394D4;
+    text-shadow: 
+    8px 5px #87b3ed97,
+    24px 10px #bbd8ff72;
+    background-color: #F4FCFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+footer {
+    position: absolute;
+    right: 130px;
+    bottom: 13px;
+    font-size: 24px;
+    background-color: #F4FCFF;
+    padding: 10px;
+    z-index: 2;
+    scale: 80%;
+}
+
+#mainclock {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: #6394D4;
+    font-size: 48px; 
+}
+
+.error {
+    color: rgb(220, 87, 87);
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+    margin-top: -10px;
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    width: 1040px;
+    height: 650px;
+    background-image: url(images/news.png);
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 95px;
+    left: 315px;
+    width: 35%;
+    height: 77%;
+    margin: auto;
+    line-height: 1.2em;
+}
+
+.buttons {
+    flex: 1;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec-1 {
+     background-color: rgb(255, 253, 246); z-index: 1;}
+#sec-2 { background-color: rgb(255, 253, 246);}
+#sec-3 { 
+    position: relative;
+    width: 1040px;
+    height: 650px;
+    background-image: url(images/newsanchor.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 50px;
+    left: 0;
+    top: 0;
+    opacity: 0%;
+}
+
+#sec-3 #story {
+    background-color: #6394d4c8;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: aliceblue;
+    left: 42%;
+    position: absolute;
+    width: 48%;
+    height: 75%;
+    top: 10%;
+    line-height: 1.5em;
+}
+
+#sec-3 #closing {
+    text-align: right;
+}
+
+#sec-3 input {
+    flex: 0;
+    padding: 5px;
+}
