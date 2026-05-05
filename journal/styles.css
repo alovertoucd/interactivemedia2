@@ -34,6 +34,11 @@ body {
     top: 950px;
 }
 
+.bg3 {
+    position: relative;
+    top: 1900px;
+}
+
 #notes {
     position: absolute;
     width: 90px;
@@ -472,6 +477,12 @@ h2 {
 
 .switch a:hover {
     color: #b94ec0;
+}
+
+li {
+    color: #64b77d;
+    text-decoration: underline;
+    list-style-type: square;
 }
 
 footer {
