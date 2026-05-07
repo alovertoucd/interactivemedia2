@@ -448,7 +448,7 @@ body {
 }
 
 .content p {
-    margin-top: 2.4em;
+    margin-top: 2em;
 }
 
 .content .contentstart {
@@ -483,6 +483,39 @@ li {
     color: #64b77d;
     text-decoration: underline;
     list-style-type: square;
+}
+
+img {
+    display: block;
+    border-radius: 10%;
+    padding-bottom: 10px;
+}
+
+figure {
+    float: right;
+    margin: 1.1em;
+    margin-top: 30px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+figcaption {
+    text-align: right;
+}
+
+#pt2 .contentstart{
+    margin-top: 1em;
+}
+
+#pt2 {
+    padding: 15px;
+    transition: all 1.5s;
+}
+
+#pt2:hover {
+    background-color: #da9ea061;
+    border-radius: 10%;
+    color: #efb9bb;
 }
 
 footer {

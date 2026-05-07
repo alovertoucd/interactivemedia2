@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>A Story of a Lifetime</h1>
+    </header>
+
+    <footer>
+        <time datetime="2026-04-30">April 30th, 2026</time><br>
+        <time datetime="15:00" id="mainclock">9:00 PM</time>
+    </footer>
+
+    <main>
+        <section id="sec-1">
+            <form id="form1">
+                <label for="newName">Make a first and last name:</label>
+                <input type="text" id="newName" placeholder="ex. John Doe">
+
+                <label for="nme">A first name:</label>
+                <input type="text" id="nme" placeholder="ex. Mallory">   
+
+                <label for="acro">Make an acronym:</label>
+                <input type="text" id="acro" placeholder="ex. DUM">
+                
+                <label for="date">Enter a date:</label>
+                <input type="date" id="date"> 
+                
+                <label for="adj1">Adjective 1:</label>
+                <input type="text" id="adj1" placeholder="ex. fluffy">
+                
+                <label for="adj2">Adjective 2 (capitalized):</label>
+                <input type="text" id="adj2" placeholder="ex. Sticky">
+                
+                <label for="obj1">Object or creature 1:</label>
+                <input type="text" id="obj1" placeholder="ex. narwhal">   
+
+                <label for="obj2">Object or creature 2 (capitalized):</label>
+                <input type="text" id="obj2" placeholder="ex. Bench"> 
+
+                <p class="error"></p>
+                <input type="submit" value="Next Page" class="buttons">
+            </form>
+        </section> 
+
+        <section id="sec-2">
+            <form id="form2">
+                <label for="place">Place 1:</label>
+                <input type="text" id="place" placeholder="ex. grocery store">   
+                
+                <label for="place2">Place 2:</label>
+                <input type="text" id="place2" placeholder="ex. library">   
+               
+                <label for="pastVerb">A verb in past tense:</label>
+                <input type="text" id="pastVerb" placeholder="ex. ran">
+
+                <label for="emo">An emotion:</label>
+                <input type="text" id="emo" placeholder="ex. scared">
+                
+                <label for="num">A number:</label>
+                <input type="number" id="num" placeholder="ex. 35">   
+                
+                <label for="bod">A body part:</label>
+                <input type="text" id="bod" placeholder="ex. hand">   
+
+                <label for="verbing">Verb ending in -ing:</label>
+                <input type="text" id="verbing" placeholder="ex. swimming">
+                
+                <label for="tim">A length of time:</label>
+                <input type="text" id="tim" placeholder="ex. 1 second">
+
+                <p class="error" id="error2"></p>
+                <input type="submit" value="Breaking News!" class="buttons">
+            </form>
+        </section>
+
+        <section id="sec-3">
+            <div id="story">
+                <h2>Breaking News!!</h2>
+                <p id="news"></p>
+				
+                <p id="closing"></p>
+
+                <input type="button" value="Our Next Story..." class="buttons" id="next">
+            </div>
+
+        </section> 
+    </main>
+    
+</body>
+</html>
