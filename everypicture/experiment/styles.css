@@ -1,0 +1,30 @@
+body {
+    max-width: 1200px;
+    max-height: 750px;
+}
+
+img {
+    position: absolute;
+    display: block;
+}
+
+#blue {
+    left: 100px;
+    top: 250px;
+    transition: all 1s;
+    filter: none;
+}
+
+#red {
+    left: 460px;
+    top: 280px;
+    transition: all 1.5s;
+    filter: none;
+}
+
+#green {
+    left: 890px;
+    top: 200px;
+    transition: all 1s;
+    filter: grayscale(0%);
+}
