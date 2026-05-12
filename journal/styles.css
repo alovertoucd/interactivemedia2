@@ -39,6 +39,16 @@ body {
     top: 1900px;
 }
 
+.bg4 {
+    position: relative;
+    top: 2850px;
+}
+
+.bg5 {
+    position: relative;
+    top: 3820px;
+}
+
 #notes {
     position: absolute;
     width: 90px;
@@ -501,6 +511,21 @@ figure {
 
 figcaption {
     text-align: right;
+}
+
+#pt1 .contentstart{
+    margin-top: 1em;
+}
+
+#pt1 {
+    padding: 15px;
+    transition: all 1.5s;
+}
+
+#pt1:hover {
+    background-color: #9eda9f61;
+    border-radius: 10%;
+    color: #baefb9;
 }
 
 #pt2 .contentstart{
