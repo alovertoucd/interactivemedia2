@@ -29,31 +29,6 @@ body {
     position: relative;
 }
 
-.bg2 {
-    position: relative;
-    top: 950px;
-}
-
-.bg3 {
-    position: relative;
-    top: 1900px;
-}
-
-.bg4 {
-    position: relative;
-    top: 2850px;
-}
-
-.bg5 {
-    position: relative;
-    top: 3820px;
-}
-
-.bg6 {
-    position: relative;
-    top: 4790px;
-}
-
 #notes {
     position: absolute;
     width: 90px;
@@ -429,7 +404,6 @@ body {
     display: flex;
     justify-self: center;
     margin-bottom: 60px;
-    flex-direction: column;
 }
 
 .switch a {
@@ -437,12 +411,6 @@ body {
     text-decoration: none;
 }
 
-.post {
-    background-color: #3B3939;
-    width: 900px;
-    border-radius: 10px;
-    margin-bottom: 4em;
-}
 
 #sketch {
     width: fit-content;
@@ -463,7 +431,7 @@ body {
 }
 
 .content p {
-    margin-top: 2em;
+    margin-top: 2.4em;
 }
 
 .content .contentstart {
@@ -481,92 +449,4 @@ body {
     padding-right: 15px;
     display: flex;
     justify-content: space-between;
-}
-
-h2 {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 0;
-    line-height: 2em;
-}
-
-.switch a:hover {
-    color: #b94ec0;
-}
-
-li {
-    color: #64b77d;
-    text-decoration: underline;
-    list-style-type: square;
-}
-
-img {
-    display: block;
-    border-radius: 10%;
-    padding-bottom: 10px;
-}
-
-figure {
-    float: right;
-    margin: 1.1em;
-    margin-top: 30px;
-    font-size: 16px;
-    font-style: italic;
-}
-
-figcaption {
-    text-align: right;
-}
-
-#pt1 .contentstart{
-    margin-top: 1em;
-}
-
-#pt1 {
-    padding: 15px;
-    transition: all 1.5s;
-}
-
-#pt1:hover {
-    background-color: #9eda9f61;
-    border-radius: 10%;
-    color: #baefb9;
-}
-
-#pt2 .contentstart{
-    margin-top: 1em;
-}
-
-#pt2 {
-    padding: 15px;
-    transition: all 1.5s;
-}
-
-#pt2:hover {
-    background-color: #da9ea061;
-    border-radius: 10%;
-    color: #efb9bb;
-}
-
-footer {
-    padding: 20px;
-    line-height: 1.5em;
-    color: #b94ec0;
-    background-color: #FFF09B;
-    width: fit-content;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #b94ec0;
-}
-
-footer a:hover {
-    color: #3B3939;
-}
-
-footer p {
-    margin: 0;
 }
