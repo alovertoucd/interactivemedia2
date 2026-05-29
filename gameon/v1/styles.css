@@ -1,0 +1,106 @@
+body {
+    max-width: 1200px;
+    max-height: 750px;
+    background-color: #3E2F2D;
+    position: relative;
+    margin: auto;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+section {
+    display: flex;
+    gap: 25px;
+}
+
+.battle-zone {
+    width: 366px;
+    height: fit-content;
+}
+
+.player-info {
+    display: flex;
+    gap: 5px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #211210;
+}
+
+.player-name {
+    width: 281px;
+    border-top: none;
+    border-right: none;
+    border-left-color: blue;
+    border-bottom-color: blue;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    font-size: 48px;
+    background-color: #3E2F2D;
+    color: white;
+}
+
+.battle {
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    width: 356px;
+    height: fit-content;
+    background-color: rgb(49, 49, 49);
+}
+
+.monster {
+    height: 350px;
+    background-color: #3E3E3E;
+    height: 410px;
+}
+
+.hp {
+    background-color: black;
+    color: white;
+    border-top-style: dashed;
+    border-top-width: 5px;
+    border-color: white;
+    padding: 7px;
+}
+
+.hp-info {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.hp-info p {
+    margin-bottom: 0;
+    font-size: 36px;
+    margin-top: 5px;
+
+}
+
+.health {
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.hp-bar {
+    width: 100%;
+    height: 15px;
+    border-color: white;
+    border-width: 1.5px;
+    border-style: solid;
+}
+.hpnum {
+    color: #FFE500;
+    font-size: 30px;
+}
+
+.hp-barinner {
+    width: 100%;
+    background-color: red;
+    height: 15px;
+}
