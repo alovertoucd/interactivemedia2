@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main id="intro">
+    <section id="intro">
         <h1>Rolling Strikes</h1>
         <div class="instruction">
             <p>Rolling Strikes revolves around a pair of dice. The goal of the game is to defeat to given monster before your other player. Whichever player who fails to defeat their monster will meet an untimely demise.</p>
             <p>In turns, each player is able to roll their dice and whatever the total of that roll, that amount of damage will be dealt to their monster. After that first roll, you can choose to roll again or pass willingly to the other player. If either die lands a one, your turn is over, and its now the other player's turn.</p>
 
             <div class="warn">
-                <h3>BEWARE!!</h3>
+                <h2>BEWARE!!</h2>
                 <p>If you manage to roll Snake Eyes (if both die roll ones), then your monster will heal fully, starting you over from scratch.</p>
             </div>
         </div>
@@ -43,12 +43,10 @@
 
         </form>
         <button type="button" id="start" class="buttons">Start Battle</button>
-    </main>
-    <main id="game">
-        <header>
+    </section>
+    <section id="game">
             <h1>Rolling Strikes</h1>
-        </header>
-        <section>
+        <section id="main-game">
             <div class="battle-zone">
                 <div class="player-info">
                     <div class="icon"></div>
@@ -105,7 +103,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </section>
     <section id="overlay"></section>
 </body>
 </html>

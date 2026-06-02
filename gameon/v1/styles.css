@@ -9,23 +9,24 @@ body {
     font-style: normal;
 }
 
-main {
-    width: 1200px;
-    height: 750px;
-    position: relative;
-    margin: auto;
-    background-image: url(images/monsterbg.jpg);
-}
 
 #game {
     z-index: 1;
     position: fixed;
+    background-image: url(images/monsterbg.jpg);
+    width: 1200px;
+    height: 750px;
+    margin: auto
 }
 
 #intro {
     z-index: 0;
     position: fixed;
     opacity: 0%;
+    background-image: url(images/monsterbg.jpg);
+    width: 1200px;
+    height: 750px;
+    margin: auto
 }
 
 #start {
@@ -79,12 +80,12 @@ form {
 h1 {
     font-size: 96px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: white;
     text-shadow: 5px 0px #3E2F2D;
 }
 
-section {
+#main-game {
     display: flex;
     gap: 25px;
     align-items: center;
@@ -134,7 +135,6 @@ section {
 }
 
 .monster {
-    height: 350px;
     background-color: #3E3E3E;
     height: 410px;
 }
