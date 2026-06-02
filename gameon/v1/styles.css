@@ -4,15 +4,91 @@ body {
     background-color: #3E2F2D;
     position: relative;
     margin: auto;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 1200px;
+    height: 750px;
+    position: relative;
+    margin: auto;
+    background-image: url(images/monsterbg.jpg);
+}
+
+#game {
+    z-index: 1;
+    position: fixed;
+}
+
+#intro {
+    z-index: 0;
+    position: fixed;
+    opacity: 0%;
+}
+
+#start {
+    margin-top: 45px;
+    justify-self: center;
+    display: block;
+}
+
+.instruction {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    line-height: 1em;
+}
+
+
+.warn {
+    text-align: center;
+    justify-self: center;
+    background-color: #FFE500;
+    color: #211210;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: center;
+    column-gap: 200px;
+    row-gap: 50px;
+    font-size: 20px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    color: white;
+}
+
+.settings input {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 h1 {
     font-size: 96px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 5px 0px #3E2F2D;
 }
 
 section {
     display: flex;
     gap: 25px;
+    align-items: center;
+    justify-self: center;
 }
 
 .battle-zone {
@@ -42,6 +118,9 @@ section {
     font-size: 48px;
     background-color: #3E2F2D;
     color: white;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .battle {
@@ -67,6 +146,10 @@ section {
     border-top-width: 5px;
     border-color: white;
     padding: 7px;
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hp-info {
@@ -103,4 +186,47 @@ section {
     width: 100%;
     background-color: red;
     height: 15px;
+}
+
+#action-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+#action-display p {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#dice-display {
+    display: flex;
+    gap: 20px;
+}
+
+#action-display {
+    margin: 10px;
+}
+
+.dice {
+    width: 103px;
+    height: 103px;
+    background-color: white;
+}
+
+.buttons {
+    min-width: 222px;
+    height: 73px;
+    background-color: #75631E;
+    font-size: 48px;
+    color: white;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    padding: 10px;
 }

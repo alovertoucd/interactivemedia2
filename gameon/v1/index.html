@@ -4,57 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolling Strikes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kelly+Slab&display=swap" rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <main id="intro">
         <h1>Rolling Strikes</h1>
-    </header>
-    <section>
-        <div class="battle-zone">
-            <div class="player-info">
-                <div class="icon"></div>
-               <input class="player-name" type="text" placeholder="Player 1"> 
-            </div>
-            <div class="battle">
-                <div class="monster"></div>
-                <div class="hp">
-                    <div class="hp-info">
-                        <p>HP</p>
-                        <p class="hpnum" id="player1-hp#">36/36</p>
-                    </div>
-                    <div class="health">
-                        <div class="hp-bar" id="player1-hpbar">
-                          <div class="hp-barinner" id="player1-hpbar"></div>   
-                        </div> 
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        <div class="instruction">
+            <p>Rolling Strikes revolves around a pair of dice. The goal of the game is to defeat to given monster before your other player. Whichever player who fails to defeat their monster will meet an untimely demise.</p>
+            <p>In turns, each player is able to roll their dice and whatever the total of that roll, that amount of damage will be dealt to their monster. After that first roll, you can choose to roll again or pass willingly to the other player. If either die lands a one, your turn is over, and its now the other player's turn.</p>
 
-        <div class="battle-zone">
-            <div class="player-info">
-                <div class="icon"></div>
-               <input class="player-name" type="text" placeholder="Player 2"> 
-            </div>
-            <div class="battle">
-                <div class="monster"></div>
-                <div class="hp">
-                    <div class="hp-info">
-                        <p>HP</p>
-                        <p class="hpnum" id="player2-hp#">36/36</p>
-                    </div>
-                    <div class="health">
-                        <div class="hp-bar" id="player2-hpbar">
-                          <div class="hp-barinner" id="player2-hpbar"></div>   
-                        </div> 
-                    </div>
-                    
-                </div>
+            <div class="warn">
+                <h3>BEWARE!!</h3>
+                <p>If you manage to roll Snake Eyes (if both die roll ones), then your monster will heal fully, starting you over from scratch.</p>
             </div>
         </div>
-    </section>
+        <form>
+            <div class="settings">
+                <label for="player1">Player 1:</label>
+                <input type="text" id="player1">
+            </div>
+
+            <div class="settings">
+                <label for="player2">Player 2:</label>
+                <input type="text" id="player2">   
+            </div>
+
+            <div class="settings">
+                <label for="num">Monster HP:</label>
+                <input type="number" id="num">
+            </div>
+
+        </form>
+        <button type="button" id="start" class="buttons">Start Battle</button>
+    </main>
+    <main id="game">
+        <header>
+            <h1>Rolling Strikes</h1>
+        </header>
+        <section>
+            <div class="battle-zone">
+                <div class="player-info">
+                    <div class="icon"></div>
+                <input class="player-name" type="text" placeholder="Player 1"> 
+                </div>
+                <div class="battle">
+                    <div class="monster"></div>
+                    <div class="hp">
+                        <div class="hp-info">
+                            <p>HP</p>
+                            <p class="hpnum" id="player1-hp#">36/36</p>
+                        </div>
+                        <div class="health">
+                            <div class="hp-bar" id="player1-hpbar">
+                            <div class="hp-barinner" id="player1-hpbarinner"></div>   
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="action-zone">
+                <div id="dice-display">
+                    <div class="dice" id="die1"></div>
+                    <div class="dice" id="die2"></div>
+                </div>
+                <div id="action-display">
+                    <button class="buttons" id="roll">Roll</button>
+                    <p>or</p>
+                    <button class="buttons" id="pass">Pass</button>
+                </div>
+            </div>
+
+            <div class="battle-zone">
+                <div class="player-info">
+                    <div class="icon"></div>
+                <input class="player-name" type="text" placeholder="Player 2"> 
+                </div>
+                <div class="battle">
+                    <div class="monster"></div>
+                    <div class="hp">
+                        <div class="hp-info">
+                            <p>HP</p>
+                            <p class="hpnum" id="player2-hp#">36/36</p>
+                        </div>
+                        <div class="health">
+                            <div class="hp-bar" id="player2-hpbar">
+                            <div class="hp-barinner" id="player2-hpbarinner"></div>   
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="overlay"></section>
 </body>
 </html>
