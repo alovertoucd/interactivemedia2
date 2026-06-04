@@ -54,17 +54,17 @@
     <section id="game">
         <h1>Rolling Strikes</h1>
         <section id="main-game">
-            <div class="battle-zone">
+            <div class="battle-zone" id="player1zone">
                 <div class="player-info">
-                    <div class="icon"></div>
-                <input class="player-name" type="text" placeholder="Player 1"> 
+                    <img class="icon" src="images/sword1.jpg">
+                <input class="player-name" type="text" placeholder="Player 1" id="player1Name"> 
                 </div>
                 <div class="battle">
-                    <img class="monster" src="images/monster1.jpg">
+                    <img class="monster" src="images/monster1.jpg" alt="a ghost">
                     <div class="hp">
                         <div class="hp-info">
                             <p class="hp-title">HP</p>
-                            <p class="hpnum" id="player1-hpnum">36/36</p>
+                            <p class="hpnum" id="player1-hpnum"></p>
                         </div>
                         <div class="health">
                             <div class="hp-bar" id="player1-hpbar">
@@ -77,28 +77,27 @@
             </div>
 
             <div id="action-zone">
-                <div id="dice-display">
-                    
+                <div id="damage">
+                    <!-- <h3>7</h3>
+                    <p>damage</p> -->
+                </div>
+                <div id="dice-display">  
                 </div>
                 <div id="action-display">
-                    <!-- <p>Player 1</p>
-                    <button class="buttons" id="roll">Roll</button> -->
-                    <!-- <p>or</p>
-                    <button class="buttons" id="pass">Pass</button> -->
                 </div>
             </div>
 
-            <div class="battle-zone">
+            <div class="battle-zone" id="player2zone">
                 <div class="player-info">
-                    <div class="icon"></div>
-                <input class="player-name" type="text" placeholder="Player 2"> 
+                    <img class="icon" src="images/sword2.jpg">
+                <input class="player-name" type="text" placeholder="Player 2" id="player2Name"> 
                 </div>
                 <div class="battle">
-                    <img class="monster" src="images/monster2.jpg">
+                    <img class="monster" src="images/monster2.jpg" alt="a gremlin">
                     <div class="hp">
                         <div class="hp-info">
                             <p class="hp-title">HP</p>
-                            <p class="hpnum" id="player2-hpnum">36/36</p>
+                            <p class="hpnum" id="player2-hpnum"></p>
                         </div>
                         <div class="health">
                             <div class="hp-bar" id="player2-hpbar">
@@ -111,6 +110,10 @@
             </div>
         </section>
     </section>
-    <section id="overlay"></section>
+    <section id="overlay">
+    </section>
+    <footer>
+        <a href="sources.html">Sources</a>
+    </footer>
 </body>
 </html>
